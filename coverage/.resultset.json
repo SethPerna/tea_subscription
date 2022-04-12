@@ -1,0 +1,65 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/sethperna/turing/4module/take_home/Tea_Subscription/app/models/customer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/sethperna/turing/4module/take_home/Tea_Subscription/app/models/subscription.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/sethperna/turing/4module/take_home/Tea_Subscription/app/models/tea.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/sethperna/turing/4module/take_home/Tea_Subscription/app/models/tea_sub.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/sethperna/turing/4module/take_home/Tea_Subscription/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1649789393
+  }
+}
