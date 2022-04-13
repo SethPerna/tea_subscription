@@ -27,6 +27,8 @@
           1,
           null,
           1,
+          null,
+          1,
           1,
           null
         ]
@@ -51,15 +53,44 @@
           null
         ]
       },
+      "/Users/sethperna/turing/4module/take_home/Tea_Subscription/app/controllers/api/v1/subscriptions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/sethperna/turing/4module/take_home/Tea_Subscription/app/controllers/application_controller.rb": {
         "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          null
+        ]
+      },
+      "/Users/sethperna/turing/4module/take_home/Tea_Subscription/app/serializers/subscription_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1649789393
+    "timestamp": 1649810932
   }
 }
