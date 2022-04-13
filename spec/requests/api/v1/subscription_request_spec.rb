@@ -27,4 +27,15 @@ RSpec.describe 'subscription request' do
     expect(subscription[:data][:attributes][:status]).to eq("active")
     expect(subscription[:data][:attributes][:frequency]).to eq("monthly")
   end
+
+  it 'returns 404 if invalid data is provided' do
+    customer = Customer.create!(first_name: "Seth", last_name: "Perna", email: "gseth26@gmail.com", address: "123 Sesame St")
+    tea = Tea.create!(title: "Chamomile", description: "Sleepy Time", temp: 175, brewtime: "00:10:00")
+    data = { email: customer.email,
+             tea_title: tea.title
+     }
+    headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+    post '/api/v1/subscriptions', headers: headers, params: JSON.generate(data)
+    expect(response.status).to eq(404)
+  en
 end
