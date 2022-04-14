@@ -45,7 +45,7 @@ RSpec.describe 'subscription request' do
     subscription = customer.subscriptions.create!(title: "#{customer.first_name}'s #{tea.title} subscription", price: 10.0, status: 0, frequency: 0)
     tea_sub = TeaSub.create!(tea_id: tea.id, subscription_id: subscription.id)
     data = { email: customer.email,
-             tea_id: tea.id,
+             tea_title: tea.title,
              subscription_id: subscription.id
      }
     headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
