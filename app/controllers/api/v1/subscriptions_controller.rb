@@ -4,7 +4,7 @@ class Api::V1::SubscriptionsController < ApplicationController
     if @customer != nil
       render json: CustomerSubscriptionSerializer.new(@customer.subscriptions)
     else
-      render status: 404
+      return invalid_request
     end
   end
 
@@ -15,7 +15,7 @@ class Api::V1::SubscriptionsController < ApplicationController
       if subscription.save
         render json: SubscriptionSerializer.new(subscription), status: 201
       else
-        render status: 404
+        return invalid_request
       end
     end
   end
@@ -29,9 +29,9 @@ class Api::V1::SubscriptionsController < ApplicationController
 
       if subscription.save
         render json: SubscriptionSerializer.new(subscription)
-      else
-        render status: 404
       end
+    else
+      return invalid_request
     end
   end
 
@@ -40,5 +40,9 @@ class Api::V1::SubscriptionsController < ApplicationController
   def find_data
     @customer = Customer.find_by(email: params[:email])
     @tea = Tea.find_by(title: params[:tea_title])
+  end
+
+  def invalid_request
+    render json: { data: { message: 'Invalid Request' } }, status: 404
   end
 end
