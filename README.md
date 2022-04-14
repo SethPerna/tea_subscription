@@ -1,4 +1,4 @@
-# Tea_Sbbscription
+# Tea_Subscription
 
 ![languages](https://img.shields.io/github/languages/top/SethPerna/tea_subscription?color=red)
 ![PRs](https://img.shields.io/github/issues-pr-closed/SethPerna/tea_subscription)
