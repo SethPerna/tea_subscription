@@ -24,7 +24,7 @@ class Api::V1::SubscriptionsController < ApplicationController
     if params[:subscription_id].present?
       subscription = Subscription.find(params[:subscription_id])
       subscription.update(status: 1)
-      tea_sub = TeaSub.find_by(tea_id: params[:tea_id], subscription_id: params[:subscription_id])
+      tea_sub = TeaSub.find_by(tea_id: @tea.id, subscription_id: subscription.id)
       tea_sub.destroy
 
       if subscription.save
