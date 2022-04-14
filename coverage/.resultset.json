@@ -56,7 +56,6 @@
       "/Users/sethperna/turing/4module/take_home/Tea_Subscription/app/controllers/api/v1/subscriptions_controller.rb": {
         "lines": [
           1,
-          null,
           1,
           1,
           1,
@@ -71,8 +70,6 @@
           2,
           2,
           2,
-          2,
-          2,
           1,
           null,
           1,
@@ -80,8 +77,6 @@
           null,
           null,
           null,
-          1,
-          1,
           1,
           1,
           1,
@@ -95,6 +90,13 @@
           0,
           null,
           null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          4,
+          4,
           null,
           null
         ]
@@ -144,6 +146,6 @@
         ]
       }
     },
-    "timestamp": 1649891387
+    "timestamp": 1649895991
   }
 }
